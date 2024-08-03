@@ -6,20 +6,8 @@
 */
 #include <bits/stdc++.h>
 using namespace std;
-#define SIZE 5
 
-int a[SIZE];
-
-void scanData()
-{
-    for (int i = 0; i < SIZE; i++)
-    {
-        cout << "\nEnter the value of a[" << i << "] : ";
-        cin >> a[i];
-    }
-}
-
-void dispData()
+void dispData(int a[], int SIZE)
 {
     for (int i = 0; i < SIZE; i++)
     {
@@ -27,7 +15,7 @@ void dispData()
     }
 }
 
-void insertionSort()
+void insertionSort(int a[], int SIZE)
 {
     int i, j, temp;
     for (i = 1; i < SIZE; i++)
@@ -46,23 +34,24 @@ void insertionSort()
         }
         a[j + 1] = temp;
         cout << "\n\nPass: " << i << " => ";
-        dispData(); // for print each pass
+        dispData(a, SIZE); // for print each pass
     }
 }
 
 int main()
 {
-    scanData();
+    int a[] = {12, 45, 23, 51, 19, 8};
+    int SIZE = sizeof(a) / sizeof(int);
 
     cout << "\nBefore Insertion Sort Perform\n";
     cout << "------------------------------------------------------\n";
-    dispData();
+    dispData(a, SIZE);
 
     // insertion sort
-    insertionSort();
+    insertionSort(a, SIZE);
     cout << "\nAfter Insertion Sort Perform\n";
     cout << "------------------------------------------------------\n";
-    dispData();
+    dispData(a, SIZE);
 
     return 0;
 }

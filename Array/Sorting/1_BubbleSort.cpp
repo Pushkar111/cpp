@@ -38,20 +38,8 @@ Example :-
 */
 #include <bits/stdc++.h>
 using namespace std;
-#define SIZE 5
 
-int a[SIZE];
-
-void scanData()
-{
-    for (int i = 0; i < SIZE; i++)
-    {
-        cout << "\nEnter the value of a[" << i << "] : ";
-        cin >> a[i];
-    }
-}
-
-void dispData()
+void dispData(int a[], int SIZE)
 {
     for (int i = 0; i < SIZE; i++)
     {
@@ -59,7 +47,7 @@ void dispData()
     }
 }
 
-void bubbleSort()
+void bubbleSort(int a[], int SIZE)
 {
     int i, j, temp;
     for (i = 0; i < SIZE; i++)
@@ -74,22 +62,24 @@ void bubbleSort()
             }
         }
         cout << "\n\nPass: " << i + 1 << " => ";
-        dispData(); // print the array after each pass
+        dispData(a, SIZE); // print the array after each pass
     }
 }
 
 int main()
 {
-    scanData();
+    int a[] = {12, 45, 23, 51, 19, 8};
+    int SIZE = sizeof(a) / sizeof(int);
+
     cout << "\nBefore Bubble Sort Perform\n";
     cout << "----------------------------------------------------------\n";
-    dispData();
+    dispData(a, SIZE);
 
     // Bubble Sort
-    bubbleSort();
+    bubbleSort(a, SIZE);
     cout << "\nAfter Bubble Sort Perform\n";
     cout << "----------------------------------------------------------\n";
-    dispData();
+    dispData(a, SIZE);
 
     return 0;
 }
