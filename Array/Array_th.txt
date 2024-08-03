@@ -1,0 +1,19 @@
+/*
+-------------
+|   Array   | => Array is a list of variables of similar data types 
+-------------
+Examples: 
+    (1) {1,2,3,4}
+    (2) {'a', 'b', 'c', 'd', 'e'}
+
+Syntax:
+    data_type array_name[SIZE];
+
+    int a[5] = {10, 20, 30, 40, 50};
+    
+    ->  array → SIZE * data_type bytes;
+        
+        here, int → 4 bytes & 
+            array → 5 * 4 = 20 bytes
+*/
+

@@ -1,0 +1,48 @@
+
+👉 SubArray => Continuous part of the array
+
+    Example => 
+        here, one array,
+        ---------------------------------------------------------
+        |   1   |   2   |   0   |   7   |   2   |   0   |   2   |
+        ---------------------------------------------------------
+        
+        lets cut its in SubArray which is,
+        ---------------------------------------------------------
+        |   1   |       |       |       |       |   0   |   2   |
+        ---------------------------------------------------------
+            
+            ---------------------------------
+            |   2   |   0   |   7   |   2   |
+            ---------------------------------
+
+    👨‍🎓 Notes :- 
+        Number of SubArrays of an array with n elements
+        = nC2 + n
+        = n*(n+1)/2
+
+
+👉 SubSequence => SubSequence is a sequence that can be derived an array by selecting zero or more elements, without changing the order of the remaining elements.
+    
+    Example => 
+       here, one array,
+        ---------------------------------------------------------
+        |   1   |   2   |   0   |   7   |   2   |   0   |   2   |
+        ---------------------------------------------------------
+        
+        lets cut its in SubSequence which is,
+        ---------------------------------------------------------
+        |   1   |       |   0   |       |       |   0   |   2   |
+        ---------------------------------------------------------
+            
+            -------------------------
+            |   2   |   7   |   2   |
+            -------------------------
+       
+    👨‍🎓 Notes :- 
+        Number of SubSequencies of an array with n elements
+        = 2^n
+
+---------------------------------------------------------------------------------
+👨‍🎓 Notes :-
+    Every SubArray is a SubSequence but Every SubSequence is not SubArray.

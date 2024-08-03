@@ -1,0 +1,74 @@
+structure - User Defined DataType
+
+struct Bank
+{
+	int acno;//1
+	char acname[50];//ambani
+	int balance;//555555555555555555555555555555
+};
+
+void main()
+{
+	struct Bank acc1;
+	acc1.acno=10;
+	strcpy(acc1.acname,"ambani");
+
+	strcpy(acc1.acname,"bhavy");
+
+}
+
+acc1
+----------
+acno
+acname
+balance
+----------
+
+
+
+Structure Limitations:---------> Advaced structure--->[class]
+------------------------
+
+1) structure Dm's -- publicly accessble 
+2) structure ---can not define---->scope
+3) can not define---->srtcuture specific method
+4) structure----can not use or implement OOP's features
+
+5) structure-----> Advaced structure--->class
+
+6) can't use constructor and constructor overloadding
+7) can't use operator and operator overloadding 
+8) can't use friend function
+9) inline function
+10) can't use specific function inside structire
+11) can not define destructor inside structure
+12) data is not safe in structure variable
+
+OOP's ---> object Oriented Programming Features
+ |
+OOP's features(6):-
+----------------
+1) class
+2) object
+3) encapsulation
+4) inheritance
+5) polymorphism
+6) abstrcation
+
+
+
+
+scope:-
+--------
+	1) private
+	2) protected
+	3) public
+
+ 
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+Constructor:-
+------------
+1) Default		2) Parameterized		3) Copy			
+
+
+
+
+Characteristics of Constructor 
+*********************************
+===> A constructor is a special member function of the class. It is different from a generic member function for the following reasons: 
+
+===> Constructor member is scoped public
+===> It has the same name as that of declaring class.  
+===> The name is case-sensitive  
+===> Constructors do not have a return type.  
+===> The default constructor is implicitly created. When creating an object, the constructor gets called automatically. 
+===> A constructor is not implicitly inherited.
+===> It usually has different rules for scope modifiers.
+
+
+
+
+-------------------------------------------------------------------------------------
+class Student
+{
+	int rno;
+	char name[50];
+	int std;
+public:
+	// Default Constructor
+	Student()
+	{
+
+	}
+	void scan(){}
+	void disp(){}
+};
+void main()
+{
+	Student s;// constructur = 1) Dm's memory alloc + 2) Dm's Initialise
+	s.scan();
+}
+
+1) method
+2) constructor
+
+----------------------------------------------------------------------------------------
+
+Characteristics of Constructor 
+************************************************
+A constructor is a special member function of the class. It is different from a generic member function for the following reasons: 
+
+---> Constructor member is scoped public
+---> The name of the constructor is the same as its class name.
+---> The name is case-sensitive   
+---> Constructors do not have a return type.  
+---> The default constructor is implicitly created. 
+---> When creating an object, the constructor gets called automatically. 
+---> A constructor is not implicitly inherited.
+---> It usually has different rules for scope modifiers.
+---> Constructors are mostly declared in the public section of the class though it can be declared in the private section of the class.
+---> Constructors do not return values; hence they do not have a return type.
+---> A constructor gets called automatically when we create the object of the class.
+---> Constructors can be overloaded.
+---> Constructor can not be declared virtual.
+---> Constructor cannot be inherited.
+---> Addresses of Constructor cannot be referred.
+---> Constructor make implicit calls to new and delete operators during memory allocation.
+
+----------------------------------------------------------------------------------------
+Defination of Constructor
+****************************************
+
+Constructor in C++ is a special method that is invoked automatically at the time of object creation. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as the class or structure. It constructs the values i.e. provides data for the object which is why it is known as constructor.
+
+• Constructor is a member function of a class, whose name is same as the class name.
+• Constructor is a special type of member function that is used to initialize the data members for an object of a class automatically, when an object of the same class is created.
+• Constructor is invoked at the time of object creation. It constructs the values i.e. provides data for the object that is why it is known as constructor.
+• Constructor do not return value, hence they do not have a return type.
+
